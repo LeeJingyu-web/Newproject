@@ -5,6 +5,7 @@ import crawlKoreaData_Seoul as crawl3
 import LED_Display as LMD
 import threading
 from datetime import date, timedelta
+from matrix import *
 
 today = date.today()
 a = str(today)
@@ -50,7 +51,8 @@ array_screen = [
     [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]]
 
 LED_init()
-draw_matrix(array_screen); print()
+screen = Matrix(array_screen)
+draw_matrix(screen); print()
 
 # 지역별 확진자 수 검색 함수
 def search_count(js_file,search_region):
