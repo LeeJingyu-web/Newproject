@@ -52,9 +52,11 @@ array_screen = [
     [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
     [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]]
 
-LED_init()
+
 screen = Matrix(array_screen)
-draw_matrix(screen); print()
+screen2 = Matrix(screen)
+LED_init()
+draw_matrix(screen2); print()
 
 # 지역별 확진자 수 검색 함수
 def search_count(js_file,search_region):
