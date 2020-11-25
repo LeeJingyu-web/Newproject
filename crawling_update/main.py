@@ -22,8 +22,7 @@ crawl1.run()
 crawl2.run()
 crawl3.run()
 
-def draw_matrix(m):
-    array = m.get_array()
+def draw_matrix(array):
     for x in range(16):
         for y in range(32):
             if array[x][y] == 1:
@@ -56,7 +55,7 @@ array_screen = [
 screen = Matrix(array_screen)
 screen2 = Matrix(screen)
 LED_init()
-draw_matrix(screen2); print()
+draw_matrix(array_screen); print()
 
 # 지역별 확진자 수 검색 함수
 def search_count(js_file,search_region):
