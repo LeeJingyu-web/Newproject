@@ -7,6 +7,8 @@ import threading
 from datetime import date, timedelta
 from matrix import *
 
+from crawling_update.matrix import Matrix
+
 today = date.today()
 a = str(today)
 
